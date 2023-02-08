@@ -6,6 +6,21 @@
     <description>Recent content on おじさん道</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 23 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://garupanojisan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Feb 2023 17:16:47 +0900</lastBuildDate><atom:link href="https://garupanojisan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KustomizeからSealedSecretsを導入するとCRDが見当たらない</title>
+      <link>https://garupanojisan.github.io/posts/20230208/</link>
+      <pubDate>Wed, 08 Feb 2023 17:16:47 +0900</pubDate>
+      
+      <guid>https://garupanojisan.github.io/posts/20230208/</guid>
+      <description> TL;DR 見出しへのリンク Kustomize の helmCharts で includeCRDs: true を指定しないと CRD がインストールされない。
+問題 見出しへのリンク SealedSecretsを導入しようと kustomization.yaml の helmChartsを以下のように定義しました。
+helmCharts: - repo: https://bitnami-labs.github.io/sealed-secrets releaseName: sealed-secrets name: sealed-secrets この定義を使ってクラスタに SealedSecrets コントローラをインストールした後に、 SealedSecretsをデプロイしようとすると以下のようなエラーが出ました。
+error: unable to recognize &amp;#34;sealedsecret.json&amp;#34;: no matches for kind &amp;#34;SealedSecret&amp;#34; in version &amp;#34;bitnami.com/v1alpha1&amp;#34; 解決 見出しへのリンク こちらに同様の Issue があった。
+https://github.com/bitnami-labs/sealed-secrets/issues/894
+解決策としては以下のように kustomize の helmCharts で includeCRDs: true を指定すれば、 CRDも一緒にインストールされます。
+helmCharts: - repo: https://bitnami-labs.github.io/sealed-secrets releaseName: sealed-secrets name: sealed-secrets includeCRDs: true </description>
+    </item>
+    
   </channel>
 </rss>

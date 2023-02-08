@@ -12,7 +12,9 @@ pygmentscodefencesguesssyntax = true
 
 disqusShortname = "yourdiscussshortname"
 
-publishDir = "docs" # github pagesで表示するための設定
+# github pagesで表示するための設定
+publishDir = "docs"
+canonifyurls = true
 
 [params]
   author = "GarupanOjisan"

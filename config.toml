@@ -12,6 +12,8 @@ pygmentscodefencesguesssyntax = true
 
 disqusShortname = "yourdiscussshortname"
 
+publishDir = "docs" # github pagesで表示するための設定
+
 [params]
   author = "GarupanOjisan"
   info = "Software Engineer"

@@ -10,8 +10,6 @@ pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "yourdiscussshortname"
-
 # github pagesで表示するための設定
 publishDir = "docs"
 canonifyurls = true
@@ -60,7 +58,7 @@ canonifyurls = true
   name = "Blog"
   weight = 1
   url  = "posts/"
-[[menu.main]]
-  name = "Works"
-  weight = 2
-  url = "works/"
+# [[menu.main]]
+#   name = "Works"
+#   weight = 2
+#   url = "works/"

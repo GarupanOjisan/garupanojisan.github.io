@@ -3,8 +3,8 @@ title = "おじさん道"
 theme = "hugo-coder"
 languagecode = "ja"
 defaultcontentlanguage = "ja"
-
 paginate = 10
+googleAnalytics = "G-J3EM64QPGM"
 
 pygmentsstyle = "bw"
 pygmentscodefences = true

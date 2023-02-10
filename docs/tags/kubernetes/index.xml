@@ -6,7 +6,17 @@
     <description>Recent content in Kubernetes on おじさん道</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 08 Feb 2023 17:16:47 +0900</lastBuildDate><atom:link href="https://garupanojisan.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Feb 2023 14:05:19 +0900</lastBuildDate><atom:link href="https://garupanojisan.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ArgoCDからkustomize buildするときに --enable-helm オプションを付けたい</title>
+      <link>https://garupanojisan.github.io/posts/20230209/</link>
+      <pubDate>Fri, 10 Feb 2023 14:05:19 +0900</pubDate>
+      
+      <guid>https://garupanojisan.github.io/posts/20230209/</guid>
+      <description> TL;DR 見出しへのリンク argocd-cm で kustomize.buildOptions に --enable-helm オプションを指定する。
+apiVersion: v1 kind: ConfigMap metadata: name: argocd-cm namespace: argocd data: kustomize.buildOptions: --enable-helm </description>
+    </item>
+    
     <item>
       <title>KustomizeからSealedSecretsを導入するとCRDが見当たらない</title>
       <link>https://garupanojisan.github.io/posts/20230208/</link>

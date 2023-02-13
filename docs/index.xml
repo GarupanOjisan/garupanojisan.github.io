@@ -6,7 +6,18 @@
     <description>Recent content on おじさん道</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 10 Feb 2023 14:05:19 +0900</lastBuildDate><atom:link href="https://garupanojisan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Feb 2023 17:06:58 +0900</lastBuildDate><atom:link href="https://garupanojisan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>E: List directory /var/lib/apt/lists/partial is missing. - Acquire (13: Permission denied)</title>
+      <link>https://garupanojisan.github.io/posts/20230213/</link>
+      <pubDate>Mon, 13 Feb 2023 17:06:58 +0900</pubDate>
+      
+      <guid>https://garupanojisan.github.io/posts/20230213/</guid>
+      <description>問題 見出しへのリンク 次のようなコマンドを実行したところ次のようなエラーが発生した。
+$ apt-get update $ apt-get install -y gettext Reading package lists... Done E: List directory /var/lib/apt/lists/partial is missing. - Acquire (13: Permission denied) /var/lib/apt/listsとは？ 見出しへのリンク /var/lib/apt/lists はパッケージ情報のキャッシュを格納する場所です。 aptでパッケージをインストール・更新するときに、このディレクトリで該当パッケージの情報を確認し、 パッケージの詳細が見つかれば、リモートリポジトリから実際にパッケージをダウンロードします。
+どうすればよいか？ 見出しへのリンク 要するにこのディレクトリに対して読み書きの権限が足りていないのが原因。 sudoを付けて実行すれば成功した。</description>
+    </item>
+    
     <item>
       <title>ArgoCDからkustomize buildするときに --enable-helm オプションを付けたい</title>
       <link>https://garupanojisan.github.io/posts/20230209/</link>

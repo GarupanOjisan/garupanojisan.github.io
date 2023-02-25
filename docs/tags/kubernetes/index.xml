@@ -6,7 +6,20 @@
     <description>Recent content in Kubernetes on おじさん道</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 10 Feb 2023 14:05:19 +0900</lastBuildDate><atom:link href="https://garupanojisan.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Feb 2023 03:23:56 +0900</lastBuildDate><atom:link href="https://garupanojisan.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>限定公開クラスタからSealed Secretsのcertを取得</title>
+      <link>https://garupanojisan.github.io/posts/20230226/</link>
+      <pubDate>Sun, 26 Feb 2023 03:23:56 +0900</pubDate>
+      
+      <guid>https://garupanojisan.github.io/posts/20230226/</guid>
+      <description> 問題 見出しへのリンク GKEの限定公開クラスタにデプロイされたSealed Secretsからcertを取得するためにkubesealで取得を試みたところ、Serviceに対して疎通できずエラーになった。
+$ kubeseal --controller-name=sealed-secrets \ --controller-namespace=namespace \ --fetch-cert \ -w cert error: cannot fetch certificate: error trying to reach service: dial tcp 10.17.1.66:8080: i/o timeout 原因 見出しへのリンク 今回GKEは限定公開クラスタになっており、kubesealからSealed SecretsのServiceに対して疎通ができない状況でした。
+解決策 見出しへのリンク port-forward して localhost:8080 から疎通できるようにします。
+# localhost:8080 -&amp;gt; svc/sealed-secrets:8080 kubectl port-forward svc/sealed-secrets -n namespace 8080:8080 そして、curlでアクセスしてcertをダウンロードします。
+curl localhost:8080/v1/cert.pem -o cert </description>
+    </item>
+    
     <item>
       <title>ArgoCDからkustomize buildするときに --enable-helm オプションを付けたい</title>
       <link>https://garupanojisan.github.io/posts/20230209/</link>

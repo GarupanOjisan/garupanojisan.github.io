@@ -6,7 +6,25 @@
     <description>Recent content in Tags on おじさん道</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 13 Feb 2023 17:50:11 +0900</lastBuildDate><atom:link href="https://garupanojisan.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Feb 2023 03:23:56 +0900</lastBuildDate><atom:link href="https://garupanojisan.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes</title>
+      <link>https://garupanojisan.github.io/tags/kubernetes/</link>
+      <pubDate>Sun, 26 Feb 2023 03:23:56 +0900</pubDate>
+      
+      <guid>https://garupanojisan.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sealed Secrets</title>
+      <link>https://garupanojisan.github.io/tags/sealed-secrets/</link>
+      <pubDate>Sun, 26 Feb 2023 03:23:56 +0900</pubDate>
+      
+      <guid>https://garupanojisan.github.io/tags/sealed-secrets/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Google Cloud</title>
       <link>https://garupanojisan.github.io/tags/google-cloud/</link>
@@ -40,15 +58,6 @@
       <pubDate>Fri, 10 Feb 2023 14:05:19 +0900</pubDate>
       
       <guid>https://garupanojisan.github.io/tags/helm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>https://garupanojisan.github.io/tags/kubernetes/</link>
-      <pubDate>Fri, 10 Feb 2023 14:05:19 +0900</pubDate>
-      
-      <guid>https://garupanojisan.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
     
